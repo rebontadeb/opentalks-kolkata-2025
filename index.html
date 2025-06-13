@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat OpenTalks | Kolkata</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* New background image from user request */
+            background-image: url('https://images.unsplash.com/photo-1677306966234-367c40e489bf?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Simple text shadow for better readability */
+        .text-shadow {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Fade-in animation for the content */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-content {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Main container with a semi-transparent overlay for text readability -->
+    <div class="relative min-h-screen w-full flex flex-col items-center justify-center bg-black/60 p-6">
+        
+        <!-- Content Box -->
+        <div class="fade-in-content text-center">
+            
+            <!-- Main Title with Red Hat's signature color -->
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-shadow">
+                <span class="text-red-500">Red Hat</span> OpenTalks
+            </h1>
+            
+            <!-- Separator -->
+            <div class="w-24 h-1 bg-red-500 mx-auto my-6 md:my-8 rounded-full"></div>
+            
+            <!-- Event Details -->
+            <div class="space-y-3 text-lg md:text-2xl font-semibold text-gray-200 text-shadow">
+                <p>
+                    <span class="font-bold">Fairfield by Marriott</span>
+                </p>
+                <p class="text-base md:text-xl text-gray-300">
+                    Kolkata | 13 June 2025
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer Note -->
+        <div class="absolute bottom-4 text-center text-sm text-gray-400">
+            <p>An exclusive event for technology leaders and innovators.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
